@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">qrCode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_scan">Scan</string>
+    <string name="generate_qr">Generate QR</string>
+    <string name="title_history">History</string>
+    <string name="type_here">Type Here</string>
+    <string name="vehicle_type">Vehicle type</string>
+    <string name="vehicle_owner">Vehicle Owner</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="generate_qr_code">Generate Qr Code</string>
+    <string name="vehicle_category">Vehicle Category</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="vehicle_colour">Vehicle Colour</string>
+    <string name="form_generate_qr_code">Form Generate QR Code</string>
+    <string name="vehichle_name">Vehichle name</string>
+    <string name="qr_code_image">qr image code</string>
+    <string name="detail_qr_code">Detail Qr code</string>
+    <string name="edit">Edit</string>
+    <string name="vehicle_owner_hint">Select Owner</string>
+    <string name="add_qr_code">Add QR Code</string>
+    <string name="upload">Upload Image</string>
+    <string name="history_qr_code">History QR Code</string>
+    <string name="exit">Exit</string>
+    <string name="entry">Entry</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="number">Number</string>
+    <string name="owner">Owner</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="qr_code">QR Code</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="selected_date">Selected Date: None</string>
+    <string name="name">Name :</string>
+    <string name="avanza">Avanza</string>
+    <string name="number_item">Number :</string>
+    <string name="entry_item">Entry :</string>
+    <string name="out_item">Out :</string>
+    <string name="info">Arahkan Kamera ke QR Code</string>
+    <string name="btn_scan">Mulai Scan</string>
+    <string name="btn_chose">Pilih Gambar dari Galeri</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="color">Color</string>
+</resources>

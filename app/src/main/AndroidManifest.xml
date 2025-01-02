@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Izin untuk membaca file pada perangkat sebelum Android 13 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+    <!-- Izin untuk membaca media pada Android 13 dan lebih tinggi -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" android:required="false" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" android:required="false" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" android:required="false" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QrCode"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FormGenerateActivity"
+            android:exported="false" />
+        <activity android:name=".utils.CaptureAct"
+            android:stateNotNeeded="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/zxing_CaptureTheme"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

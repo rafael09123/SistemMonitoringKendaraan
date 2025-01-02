@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ui.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+        <TextView
+            android:id="@+id/ln_atribut"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/bg"
+            android:gravity="center"
+            android:text="@string/scan_qr_code"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:gravity="start">
+
+        <ImageView
+            android:id="@+id/imgQrCode"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:clipToOutline="true"
+            android:src="@drawable/no_image"
+            android:background="@drawable/rounded"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/txt_vehicle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/vehichle_name"
+            android:textColor="?attr/colorOnPrimary" />
+
+        <EditText
+            android:id="@+id/edt_vehicle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:hint="@string/type_here"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_vehicle_colour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_colour"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edt_vehicle_colour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:hint="@string/type_here"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_vehicle_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_owner"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/vehicle_owner_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/txt_vehicle_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_number"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edt_vehicle_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:hint="@string/type_here"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_upload"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:clipToOutline="true"
+            android:src="@drawable/no_image"
+            android:background="@drawable/rounded"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_background"
+            android:text="@string/edit"
+            android:textColor="?attr/colorOnPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.ScanQrFragment">
+
+    <TextView
+        android:id="@+id/ln_atribut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg"
+        android:gravity="center"
+        android:text="@string/scan_qr_code"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/info"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_scan"
+            android:textColor="?attr/colorOnPrimary" />
+
+        <Button
+            android:id="@+id/btn_selectFromGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="200dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="@string/btn_chose"
+            android:textColor="?attr/colorOnPrimary" />
+
+    </LinearLayout>
+</LinearLayout>
